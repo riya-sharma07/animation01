@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    animation-name: circular;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    border-radius: 50%; 
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    
+    /* animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+    border-radius: 50%;
+}
+@keyframes circular{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+@keyframes move {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(200px,0);
+    }
+    50%{
+        transform: translate(200px,200px);
+    }
+    75%{
+        transform: translate(0,200px);
+
+    }
+    
+}
